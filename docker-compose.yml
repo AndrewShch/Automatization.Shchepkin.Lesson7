@@ -4,7 +4,7 @@ services:
   postgresSql:
     image: postgres:12.0-alpine
     volumes:
-      - /data:var/lib/postgresql
+      - ./data:var/lib/postgresql
     ports:
       - '8080:8080'
     environment:
